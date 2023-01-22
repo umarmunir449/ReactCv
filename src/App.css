@@ -1,38 +1,334 @@
-.App {
-  text-align: center;
+/* *{
+    
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'poppins'' sans-serif;
+  
+}*/
+body
+{
+background-color: rgb(120, 178, 197);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container
+{ 
+  position:relative;
+  width: 100%;
+  height: 200px;
+  min-height: 1000px;
+  margin: 15px;
+  max-width: 1100px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns:1fr 3fr;
+  box-shadow: 0 30px 70px rgba(189, 54, 54, 0.1);
+  background: rgb(249, 246, 246);
+}
+.container .left_side
+{
+  width: 330px;
+position: relative;
+background: #003147;
+padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profiletext
+{  
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  align-items: center;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.profiletext .imgbx{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profiletext .imgbx img 
+{
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.profiletext h2
+{
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profiletext h2 span
+{
+font-size: 0.7em;
+font-weight: 200em;
+
 }
+.contactinfo{
+  padding-top: 20px;
+ font-size: 15px;
+}
+.title{
+  color: #fff;
+  margin-left: 9px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+.contactinfo ul
+{
+  position: relative;
+
+}
+.contactinfo ul li
+{
+  position: relative;
+  list-style: none;
+  margin: 5px;
+}
+.contactinfo ul li .icon
+{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactinfo ul li span
+{
+color: #fff;
+font-weight: 20px;
+}
+
+.contactinfo.education li
+{
+margin-bottom: 20px;
+
+}
+.contactinfo.education h6
+{
+  color: #03a9f4;
+  font-weight: 600px;
+  font-size: 12px;
+}
+.contactinfo.education h5
+{
+  color: #fff;
+  font-weight: 600px;
+  font-size: 13px;
+}
+.contactinfo.language .percent 
+{
+position: relative;
+width: 100%;
+height: 5px;
+background: #071d27;
+display: block;
+margin-top: 5px;
+}
+
+.contactinfo.language .percent .style
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90%;
+  background: #03a9f4;
+}
+.contactinfo.language .percent .st
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #03a9f4;
+}
+.contactinfo.language .percent .st
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #03a9f4;
+}
+
+.container .right_side
+{
+
+position: relative;
+  background: rgb(245, 243, 243);
+  padding: 50px;
+  }
+  .about{
+      margin: 8px;
+  }
+  .about:last-child{
+      margin-bottom: 0;
+  }
+  .title2 {
+      color: #075380;  
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+ p{
+  margin-top: 11px;
+word-spacing: 0.5em;
+justify-content: left;
+
+ }
+ .title3{
+  color:#075380;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .title4{
+  color: #075380;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 20px;
+ }
+ .title5{
+  color: #075380;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 20px;
+ }
+ .about .box{
+  display: flex;
+  flex-direction: row;
+  margin: 5px, 0;
+  
+ }
+ .about .box .year-Company{
+  min-width: 150px;
+ }
+ .about .box .year-Company h5
+ {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+  margin-top: 2px;
+  font-size: 14px;
+ }
+ .about .box .text h4{
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 15px;
+
+ }
+ .about .box .text p{
+  margin-bottom: 10px;
+ }
+ .about-skil .box{
+  position: relative;
+  width: 100%;
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+
+
+ }
+ .about-skil .box h4{
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .about-skil .box .percent{
+position: relative;
+width: 100%;
+height: 10px;
+background-color:#45525c;
+
+ }
+ .about-skil .box .percent.sty{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  background: #494d4e;
+
+ }
+ .about-skil .box .percent .sty{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: #1a82be;
+
+ }
+ .about-skil .box .percent .styl{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background: #1a82be;
+
+ }
+ .about-skil .box .percent .stylee{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  background: #1a82be;
+
+ }
+ .about-skil .box .percent .style2{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 37%;
+  height: 100%;
+  background: #1a82be;
+
+ }
+ .about-skil .box .percent .style3{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  background: #1a82be;
+
+ }
+ .about-skil .box .percent .style4{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background: #1a82be;
+
+ }
+ .about-skil .box .percent .style5{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #1a82be;
+
+ }
